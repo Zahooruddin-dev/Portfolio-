@@ -98,8 +98,6 @@ footer .logo {
     flex-direction: column;
     margin-top: -100px;
     max-width: 350px;
-    border-bottom: 1px var(--color5) solid;
-    padding-bottom: 80px;
     width: 95%;
 }
 h1 span {border-bottom: 3px solid var(--color2);}
@@ -319,7 +317,7 @@ footer {
         max-width: unset;
         margin: unset;
         padding-top: 90px;
-        padding-bottom: 219px;
+     
         gap: 30px;
         flex-direction: column;
     }
