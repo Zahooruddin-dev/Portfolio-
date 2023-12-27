@@ -201,16 +201,15 @@
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
 
-
-emailjs.init("Dm3igbP7hb_Wlqvq1"); // Replace with your actual Email.js user ID
-
-
 function sendEmail() {
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const message = document.getElementById("message").value;
 
-  emailjs.send("service_qtdr5vj", "template_jwero8iv", {
+  // Log the data that will be sent
+  console.log("Sending email with data:", { from_name: name, from_email: email, message: message });
+
+  emailjs.send("service_qtdr5vj", "template_30g3niv", {
     from_name: name,
     from_email: email,
     message: message,
@@ -219,10 +218,18 @@ function sendEmail() {
     console.log("Email sent successfully:", response);
     alert("Your message has been sent successfully!");
     showPopup(); // Show the popup on successful email sending
-  }, function(error) {
-    console.log("Email failed to send:", error);
-    alert("Oops! There was an error sending your message. Please try again later.");
+  })
+  .catch(function(error) {
+    console.error("Email failed to send:", error);
+
+    // Check the error status to determine the source of the issue
+    if (error.status === 404) {
+      alert("Oops! The Email.js API endpoint was not found. Please check your service ID and template ID.");
+    } else {
+      alert("Oops! There was an error sending your message. Please try again later.");
+    }
   });
 }
+
 </script>
 </html>
