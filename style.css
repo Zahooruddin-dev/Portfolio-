@@ -494,3 +494,26 @@ footer {
 
     
 }
+.project_img {
+    position: relative;
+    width: 100%; /* Adjusting width as needed */
+    max-width: 800px; /* Set maximum width */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .project_img video {
+    width: 100%; /* Make the video fill the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the video horizontally */
+  }
+
+
+.project_img:hover video {
+    display: block; /* Display the video on hover */
+    opacity: 0.5; /* Change opacity on hover */
+}
+.project_img {
+    height: 360px; /* Set the desired height */
+  }
+  
