@@ -516,4 +516,7 @@ footer {
 .project_img {
     height: 360px; /* Set the desired height */
   }
-  
+  #nameHover {
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
