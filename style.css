@@ -133,15 +133,15 @@ p {
 }
 
 .skill_title {
-    font-size: 32px;
-    line-height: 40px;
-    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 550;
     letter-spacing: -1px;
     margin: 0;
 }
 
 .skill_exp {
-    font-weight: 500;
+    font-weight: 400;
     line-height: 26px;
     color: var(--color4);
     font-size: 16px;
@@ -499,6 +499,7 @@ footer {
     width: 100%; /* Adjusting width as needed */
     max-width: 800px; /* Set maximum width */
     margin: 0 auto; /* Center the container */
+    border-radius: 25px;
   }
   
   .project_img video {
