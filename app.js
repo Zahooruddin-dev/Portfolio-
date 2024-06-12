@@ -1,3 +1,5 @@
+emailjs.init("Dm3igbP7hb_Wlqvq1"); // Replace 'your_user_id' with your actual EmailJS user ID
+emailjs.init("Dm3igbP7hb_Wlqvq1"); // Replace 'your_user_id' with your actual EmailJS user ID
 
 function sendEmail() {
   const name = document.getElementById("name").value;
@@ -7,7 +9,7 @@ function sendEmail() {
   // Log the data that will be sent
   console.log("Sending email with data:", { from_name: name, from_email: email, message: message });
 
-  emailjs.send("service_qtdr5vj", "template_30g3niv", {
+  emailjs.send("service_qtdr5vj", "template_jwero8i", {
     from_name: name,
     from_email: email,
     message: message,
@@ -15,7 +17,7 @@ function sendEmail() {
   .then(function(response) {
     console.log("Email sent successfully:", response);
     alert("Your message has been sent successfully!");
-    showPopup(); // Show the popup on successful email sending
+    showPopup(); // Ensure showPopup is defined
   })
   .catch(function(error) {
     console.error("Email failed to send:", error);
@@ -28,6 +30,13 @@ function sendEmail() {
     }
   });
 }
+
+// Define the showPopup function
+function showPopup() {
+  // Your code to show a popup
+  console.log("Popup displayed");
+}
+
 // Function to handle LinkedIn click
 function handleLinkedInClick() {
     alert("I'm sorry, I don't have a LinkedIn profile because I'm not yet 18. Thank you for your understanding.");
