@@ -1,5 +1,5 @@
-emailjs.init("Dm3igbP7hb_Wlqvq1"); // Replace 'your_user_id' with your actual EmailJS user ID
-emailjs.init("Dm3igbP7hb_Wlqvq1"); // Replace 'your_user_id' with your actual EmailJS user ID
+emailjs.init("Dm3igbP7hb_Wlqvq1"); 
+
 
 function sendEmail() {
   const name = document.getElementById("name").value;
